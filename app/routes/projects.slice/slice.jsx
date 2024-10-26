@@ -20,7 +20,7 @@ import sliceSidebarLayersPlaceholder from '~/assets/slice-sidebar-layers-placeho
 import sliceSidebarLayers from '~/assets/slice-sidebar-layers.png';
 import sliceSlidesLarge from '~/assets/slice-slides-large.jpg';
 import sliceSlidesPlaceholder from '~/assets/slice-slides-placeholder.jpg';
-import sliceSlides from '~/assets/slice-slides.jpg';
+import sliceSlides from '~/assets/slice-slides.png';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import {
@@ -82,33 +82,37 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>
+                Simplifying SEO Package Choices
+              </ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                In a competitive digital landscape, business owners needed a
+                straightforward way to understand and select the right SEO plan tailored
+                to their needs. Before this, deciding between multiple SEO packages often
+                felt overwhelming due to feature overload and unclear distinctions between
+                tiers.
               </ProjectSectionText>
               <ProjectSectionText>
-                Our solution was to allow users to be invited to a layer, where they can
-                see others’ annotations and make their own.
+                Our solution is to present a clear, side-by-side comparison of SEO
+                packages. Each plan outlines key features and provides transparency by
+                specifying the number of services included.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={`${sliceSidebarLayers} 350w, ${sliceSidebarLayersLarge} 700w`}
-                width={350}
-                height={750}
+                srcSet={`${sliceSidebarLayers} 350w, ${sliceSidebarLayers} 700w`}
+                width={1350}
+                height={1750}
                 placeholder={sliceSidebarLayersPlaceholder}
                 alt="The layers sidebar design, now with user profiles."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
               <Image
                 className={styles.sidebarImage}
-                srcSet={`${sliceSidebarAnnotations} 350w, ${sliceSidebarAnnotationsLarge} 700w`}
-                width={350}
-                height={750}
+                srcSet={`${sliceSidebarLayers} 350w, ${sliceSidebarLayers} 700w`}
+                width={1350}
+                height={1750}
                 placeholder={sliceSidebarAnnotationsPlaceholder}
                 alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
@@ -119,18 +123,19 @@ export const Slice = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>
+                Streamlined Contact Experience
+              </ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+                We recognized the need for a more intuitive way for clients to get in
+                touch, so we developed an enhanced contact interface. This form
+                prioritizes simplicity and accessibility, ensuring users can quickly
+                provide essential details like name, contact information, and service
+                requirements.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              srcSet={`${sliceSlides} 800w, ${sliceSlidesLarge} 1920w`}
+              srcSet={`${sliceSlides} 800w, ${sliceSlides} 1920w`}
               width={800}
               height={500}
               placeholder={sliceSlidesPlaceholder}
@@ -139,7 +144,7 @@ export const Slice = () => {
             />
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection padding="top">
+        {/* <ProjectSection padding="top">
           <ProjectSectionContent className={styles.grid}>
             <div className={styles.gridImage}>
               <div className={styles.gridBackground}>
@@ -175,26 +180,35 @@ export const Slice = () => {
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+                The website delivered a significant boost in user
+                engagement and lead generation for our clients. Through a combination of
+                streamlined design and interactive features, users found it easier to
+                explore services, subscribe to newsletters, and initiate contact. Feedback
+                from clients indicated that the website’s clean interface and organized
+                layout improved user retention, while the interactive service selection
+                feature allowed potential clients to explore offerings in a personalized
+                manner.
+                <br />
+                <br /> Users also appreciated the intuitive navigation and quick access to
+                valuable resources, resulting in increased satisfaction and a stronger
+                brand connection. Overall, the project achieved its goals of enhancing
+                visibility, driving conversions, and creating a seamless user experience
+                across all devices.
               </ProjectSectionText>
             </ProjectTextRow>
-            <Image
+            {/* <Image
               src={sliceIrl}
               width={940}
               height={500}
               placeholder={sliceIrlPlaceholder}
               alt="Students at the University of New South Wales using the new collaborative annotation features"
-            />
+            /> */}
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>

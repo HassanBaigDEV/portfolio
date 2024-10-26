@@ -70,14 +70,14 @@ const EarthSection = lazy(() =>
   import('./earth').then(module => ({ default: module.EarthSection }))
 );
 
-const title = 'Designing the future of education';
+const title = 'A Full Stack Project Management App';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'As a solo developer, I created this Trello clone as a side project, focusing on a user-friendly design with features like drag-and-drop, customizable boards, and real-time updates. This project sharpened my skills in both frontend and backend development while building a practical tool for task management';
 const roles = [
-  'Art Direction',
-  'UX and UI Design',
   'Front End Development',
-  'Motion Design',
+  'Back End Development',
+  'UI/UX Design',
+  'Schema Design',
 ];
 
 export const meta = () => {
@@ -102,12 +102,7 @@ export const SmartSparrow = () => {
           srcSet={`${backgroundSpr} 1080w, ${backgroundSprLarge} 2160w`}
           placeholder={backgroundSprPlaceholder}
         />
-        <ProjectHeader
-          title={title}
-          description={description}
-          url="https://www.smartsparrow.com/"
-          roles={roles}
-        />
+        <ProjectHeader title={title} description={description} url="" roles={roles} />
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
@@ -134,13 +129,12 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              I set out to create a Trello clone to provide a powerful, intuitive tool for
+              personal and team task management. Existing project management tools often
+              felt either overly complex or limited in customization options. The goal was
+              to build a user-friendly platform with core features like drag-and-drop task
+              organization, customizable boards, and real-time updates, making it simple
+              enough for beginners but scalable for advanced users.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -189,28 +183,22 @@ export const SmartSparrow = () => {
             <Image
               raised
               key={theme}
-              srcSet={
-                isDark
-                  ? `${imageSprDesignSystemDark} 1280w, ${imageSprDesignSystemDarkLarge} 2560w`
-                  : `${imageSprDesignSystemLight} 1280w, ${imageSprDesignSystemLightLarge} 2560w`
-              }
+              srcSet={`${imageSprDesignSystemDarkLarge} 1280w, ${imageSprDesignSystemDarkLarge} 2560w`}
               width={1280}
               height={800}
-              placeholder={
-                isDark
-                  ? imageSprDesignSystemDarkPlaceholder
-                  : imageSprDesignSystemLightPlaceholder
-              }
+              placeholder={imageSprDesignSystemDarkPlaceholder}
               alt="The homepage of the aero design system docs website linking to principles and components."
               sizes="100vw"
             />
             <ProjectTextRow>
-              <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
+              <ProjectSectionHeading>Task Details Panel</ProjectSectionHeading>
               <ProjectSectionText>
-                A design system is useless if no one knows how to use it, so we put
-                together a comprehensive documentation website to cover principles, ux,
-                accessibility, and component guidelines for designers and engineers
-                working with the system.
+                The Task Details Panel offers a clear, detailed look at each task,
+                enabling users to edit descriptions, add comments, assign team members,
+                set deadlines, and organize with labels. Key actions like copying,
+                watching, transferring, or archiving tasks are also accessible here,
+                ensuring smooth collaboration and easy task management for the entire
+                team.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -232,12 +220,18 @@ export const SmartSparrow = () => {
             <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Motion design</ProjectSectionHeading>
+                  <ProjectSectionHeading>
+                    Seamless Drag-and-Drop for Effortless Organization
+                  </ProjectSectionHeading>
                   <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
+                    The drag-and-drop functionality is central to making task management
+                    intuitive and fluid. With simple, natural movements, users can
+                    rearrange tasks across lists. Visual cues and smooth animations make the
+                    transition feel responsive, helping users instantly understand how
+                    their actions affect the board. This feature empowers users to quickly
+                    prioritize and reorganize their workflows, reducing friction and
+                    enhancing the overall experience by making task management fast,
+                    flexible, and satisfying.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>

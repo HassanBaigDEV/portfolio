@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "homepage": "https://hassanb.netlify.app",
-  "description": "Portfolio site for Hamish Williams",
-  "repository": "git remote add origin https://github.com/HamishMW/portfolio.git",
+  "homepage": "/",
+  "description": "Portfolio site for Hassan Baig",
+  "repository": "",
   "author": "Hassan",
   "sideEffects": false,
   "type": "module",
